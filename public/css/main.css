@@ -73,7 +73,7 @@ body {
   box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 15.18%);
 }
 
-.order_container img {
+.main-img {
   width: 327px;
   height: 160px;
 
@@ -125,6 +125,8 @@ body {
   align-items: center;
 
   margin-bottom: 20px;
+
+  border-radius: 10px;
 }
 
 .order_plan-content {
@@ -135,6 +137,32 @@ body {
 
   justify-content: space-between;
   align-items: center;
+}
+
+.plan {
+  font-size: 14px;
+  font-weight: var(--fw-900);
+
+  color: var(--clr-neutral-300);
+}
+
+.plan_cost {
+  font-size: 14px;
+  font-weight: var(--fw-500);
+
+  color: var(--clr-neutral-200);
+}
+
+.order_plan-body {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.order_plan-body img {
+  margin-right: 20px;
 }
 
 .order_plan-content img {
@@ -161,6 +189,12 @@ body {
 
   margin-bottom: 20px;
   box-shadow: 0 20px 20px 0 rgba(56, 42, 225, 19.03%);
+
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #766cf1;
 }
 
 .btn-neutral {
@@ -169,4 +203,87 @@ body {
 
   text-decoration: none;
   font-weight: var(--fw-900);
+
+  margin-top: 20px;
+}
+
+.plan_btn {
+  color: #382ae1;
+  font-size: 14px;
+  font-weight: var(--fw-700);
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #382ae1;
+  transition: all 0.3s;
+}
+
+.plan_btn:hover {
+  color: #766cf1;
+  border-bottom: none;
+}
+
+.btn-neutral:hover {
+  color: #1f2e55;
+}
+
+@media screen and (min-width: 1440px) {
+  .img_mobile {
+    display: none;
+  }
+
+  .img_desktop {
+    display: block;
+  }
+
+  .order_container {
+    width: 450px;
+    height: 697px;
+  }
+
+  .main-img {
+    width: 450px;
+    height: 220px;
+  }
+
+  .order_content h1 {
+    font-size: 28px;
+  }
+
+  .order_body {
+    font-size: 16px;
+    line-height: 26px;
+
+    width: 354px;
+    height: 78px;
+
+    margin-bottom: 20px;
+  }
+
+  .order_plan {
+    width: 354px;
+    height: 98px;
+
+    margin-bottom: 30px;
+  }
+
+  .order_plan-content {
+    width: 306px;
+    height: 48px;
+  }
+
+  .plan {
+    font-size: 16px;
+
+    padding-bottom: 6px;
+  }
+
+  .plan_cost {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    width: 354px;
+    height: 50px;
+  }
 }
